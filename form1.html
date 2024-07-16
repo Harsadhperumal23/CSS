@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc; /* Beige background */
+            color: #4b2e2e; /* Dark brown text */
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem;
+            background-color: #fff8dc; /* Cornsilk background */
+            border: 1px solid #8b4513; /* SaddleBrown border */
+            border-radius: 5px;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #8b4513; /* SaddleBrown */
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        input, select {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #8b4513; /* SaddleBrown border */
+            border-radius: 5px;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+        button {
+            padding: 0.75rem;
+            background-color: #4b2e2e; /* Dark brown background */
+            color: #f5f5dc; /* Beige text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3b1e1e; /* Darker brown background on hover */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label>
+            <input type="checkbox" id="subscription" name="subscription">
+            Subscribe to newsletter
+        </label>
+        
+        <label>Gender</label>
+        <label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            Male
+        </label>
+        <label>
+            <input type="radio" id="female" name="gender" value="female">
+            Female
+        </label>
+        
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
